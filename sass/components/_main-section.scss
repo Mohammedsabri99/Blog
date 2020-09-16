@@ -1,0 +1,170 @@
+#main {
+    background-color: $main-color;
+
+    .about-section,
+    .skills-section,
+    .contact-section {
+        min-height: 250px;
+        margin: 100px 0px 100px 0px;
+        padding: 0px;
+        border-top: 25px solid $third-color;
+        border-bottom: 25px solid $third-color;
+        background-color: $white-color;
+
+        .btn {
+            margin: 55px 10px 0px 10px;
+            background-color: $third-color;
+            transition: all .9s ease-in-out;
+
+            @include xs {
+                margin: 20px 0px 20px 0px;
+                display: inline-block;
+            }
+
+            @include sm {
+                margin: 20px 0px 20px 0px;
+                display: inline-block;
+            }
+
+            &:hover,
+            &:focus,
+            &.active {
+                background-color: $secondary-color;
+                transform: scale(1.4);
+                outline: none;
+                cursor: pointer;
+
+                @include xs {
+                    transform: scale(1.1);
+                }
+    
+                @include sm {
+                    transform: scale(1.1);
+                }
+            }
+
+            a {
+                color: $white-color;
+                font-family: 'Roboto Slab', serif;
+                font-size: 17px;
+
+                @include xs {
+                    font-size: 15px;
+                }
+    
+                @include sm {
+                    font-size: 15px;
+                }
+                
+                &:hover,
+                &:focus,
+                &.active {
+                    color: $third-color;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            padding: 55px 100px 0px 100px;
+            transition: all .5s ease-in-out;
+
+            @include xs {padding: 0px 10px 0px 10px;}
+            @include sm {padding: 0px 10px 0px 10px;}
+
+            &:hover,
+            &:focus,
+            &.active {
+                opacity: .6;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+        h2 {
+            color: $fourth-color;
+            font-family: 'Roboto Slab', serif;
+            font-weight: lighter;
+            padding: 50px 0px 50px 0px;
+
+            @include xs {
+                padding: 0px 10px 50px 10px;
+                font-size: 35px;
+            }
+
+            @include sm {
+                padding: 0px 10px 50px 10px;
+                font-size: 38px;
+            }
+    
+            li {
+                font-size: 20px;
+                line-height: 40px;
+                transition: all .5s ease-in-out;
+
+                &:hover,
+                &:focus,
+                &.active {
+                    transform: scale(1.4);
+                    color: $third-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .paragraph {
+            color: $fourth-color;
+            font-weight: lighter;
+            padding: 50px 0px 0px 0px;
+        }
+    
+        p {
+            color: $fourth-color;
+            padding: 50px 100px 50px 100px;
+
+            @include xs {
+                padding: 50px 10px 50px 10px;
+                font-size: 10px;
+            }
+
+            @include sm {
+                padding: 50px 10px 50px 10px;
+                font-size: 12px;
+            }
+        }
+    
+        ul {
+            line-height: 22px;
+            font-weight: lighter;
+            padding-left: 0px;
+
+            li {
+                line-height: 40px;
+                transition: all .5s ease-in-out;
+
+                &:hover,
+                &:focus,
+                &.active {
+                    transform: scale(1.4);
+                    color: $third-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .contact-list {
+            font-size: 20px;
+            line-height: 28px;
+            color: $fourth-color;
+            cursor: pointer;
+    
+            &:hover {color: $third-color;}
+    
+            a {
+                text-decoration: none;
+                color: $fourth-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

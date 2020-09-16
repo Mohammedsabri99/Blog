@@ -1,0 +1,29 @@
+// Preloader
+// =============================================
+
+@keyframes slide {
+    0% {clip: rect(0, 0, 20px, 0);}
+    30% {clip: rect(0, 80px, 20px, 0);}
+    50% {clip: rect(0, 80px, 20px, 0);}
+    80% {clip: rect(0, 80px, 20px, 80px);}
+    100% {clip: rect(0, 80px, 20px, 80px);}
+}
+
+// Scroll
+// ===========================================================================
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+    }
+
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.5);
+    }
+}

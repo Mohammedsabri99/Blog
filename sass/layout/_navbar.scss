@@ -1,0 +1,73 @@
+#header {
+
+    nav {
+        transition: .5s;
+
+        &.black {
+            background: rgba($main-color,.8);
+            height: 80px;
+            padding: 10px 50px;
+
+            @include xs {padding: 10px 30px;}
+            @include sm {padding: 10px 30px;}
+
+            .navbar-brand img {width: 55%;}
+
+            .navbar-collapse .nav-item a {
+                color: $secondary-color;
+                font-size: 15px;
+                font-weight: 0px;
+            }
+        }
+
+        .navbar-brand {
+
+            @include xs {margin: 0px}
+            @include sm {margin: 0px}
+
+            img {
+                width: 75%;
+                transition: .5s;
+
+                @include xs {width: 50%;}
+                @include sm {width: 50%;}
+            }
+        }
+
+        .navbar-collapse {
+
+            @include xs {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            @include sm {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            @include md {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            .nav-item {
+                a {
+                    padding: 5px 20px;
+                    color: $white-color;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $third-color;
+                        background-color: $secondary-color;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

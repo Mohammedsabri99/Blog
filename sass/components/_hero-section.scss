@@ -1,0 +1,131 @@
+#video-container {
+    min-height: 100vh;
+
+    video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        opacity: .4;
+        z-index: -1;
+    }
+
+    .banner {
+        height: 100vh;
+
+        .content {
+
+            h1 {
+                font-family: 'Roboto Slab', serif;
+                font-size: 120px;
+                text-shadow: 10px 10px 10px $black-color;
+
+                @include xs {font-size: 68px;}
+                @include sm {font-size: 70px;}
+            }
+
+            a {
+                border: 2px solid $white-color;
+                color: $white-color;
+                padding: 10px 40px;
+                font-family: 'Roboto Slab', serif;
+                font-size: 24px;
+                font-weight: 500;
+                transition: 0.5s;
+
+                @include xs {font-size: 15px;}
+                @include sm {font-size: 20px;}
+
+                &:hover {
+                    color: $main-color;
+                    border: 2px solid $main-color;
+                    
+                    &:before {
+                        transform: scaleX(1);
+                        transition: transform 0.5s;
+                        transform-origin: right;
+                    }
+
+                    &:after {
+                        transform: scaleX(1);
+                        transition: transform 0.5s;
+                        transform-origin: left;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 100%;
+                    background-color: $secondary-color;
+                    z-index: -1;
+                    transform: scale(0);
+                    transition: transform 0.5s;
+                    transform-origin: left;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 100%;
+                    background-color: $secondary-color;
+                    z-index: -1;
+                    transform: scale(0);
+                    transition: transform 0.5s;
+                    transform-origin: right;
+                }
+            }
+        }
+    }
+
+    .icon-scroll,
+    .icon-scroll::before {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .icon-scroll {
+        width: 50px;
+        height: 80px;
+        border: 2px solid $white-color;
+        border-radius: 25px;
+        cursor: pointer;
+
+        @include xs {
+            width: 40px;
+            height: 70px;
+        }
+
+        @include sm {
+            width: 45px;
+            height: 75px;
+        }
+    }
+
+    .icon-scroll::before {
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        background: $white-color;
+        margin-left: -4px;
+        top: 15px;
+        border-radius: 50%;
+        animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
+
+        @include xs {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+doctype html
+|
+|
+html(lang="en")
+    |
+    |
+    head
+        |
+        |
+        //- Basic Page Needs
+        meta(charset="utf-8")
+        title MY BLOG
+        meta(name="description" content="BLOG")
+        meta(name="keywords" content="")
+        meta(name="author" content="Mohammed_Sabri")
+        |
+        |
+        //- Mobile Specific Metas
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        |
+        |
+        //- Fixed
+        link(rel="stylesheet" href="css/vendor/fixed/fixed.css")
+        |
+        |
+        //- Normalize
+        link(rel="stylesheet" href="css/vendor/normalize/normalize.min.css")
+        |
+        |
+        //- Wow JS
+        link(rel="stylesheet" href="css/vendor/wow.js/animate.css")
+        |
+        |
+        //- Bootstrap
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        |
+        |
+        //- FontAwesome
+        script(src="https://kit.fontawesome.com/028972b223.js" crossorigin="anonymous")
+        |
+        |
+        //- CSS Stylesheet
+        link(rel="stylesheet" href="css/output.css")
+        |
+        |
+        //- Favicons
+        link(rel="shortcut icon" href="favicon/favicon-me.ico")
+        |
+        |
+    body(data-spy="scroll" data-target="#navbarResponsive" id="top")
+        |
+        |
+        //- Start Header Part
+        header#header
+
+            //- Start Navigation
+            nav.navbar.navbar-expand-md.navbar-dark.fixed-top
+
+                //- Navbar-Brand
+                a(class="navbar-brand" class="wow bounceIn" href="#header")
+                    img(src="imgs/MS Design(yellow-white).png" loading="lazy" alt="logo")
+                button(class="navbar-toggler" class="wow bounceIn" type="button" data-toggle="collapse" data-target="#navbarResponsive")
+                    span(class="navbar-toggler-icon")
+
+                //- Nav-Item
+                .collapse.navbar-collapse.outline-none#navbarResponsive
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#header") Home
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#about") About
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#skills") Skills
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#contact") Contact
+            //- End Navigation
+            |
+            |
+            //- Start Landing Page
+            #video-container.position-relative.w-100.overflow-hidden
+                video(id="bgvid" autoplay loop muted playsinline)
+                    source(src="video/Top_Highway.mp4" type="video/mp4")
+                    source(src="video/Top_Highway.webm" type="video/webm")
+                    source(src="video/Top_Highway.ogv" type="video/ogv")
+                section.banner.d-flex.justify-content-center.align-items-center#banner
+                    .content.text-center
+                        h1.mb-4.p-0.text-white.text-uppercase.wow.bounceIn My Blog
+                        a(href="#about" class="position-relative text-decoration-none text-uppercase") Start
+                        .icon-scroll
+            //- End Landing Page
+            |
+            |
+        //- End Header Part
+        |
+        |
+        //- Start Main Part
+        main#main
+            .container
+                .row.justify-content-around.text-center
+                    //- About Section
+                    .about-section#about.text-center.col-xl-12.wow.bounceIn
+                        button(type="button" class="btn")
+                            a(href="#about" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") vitae
+                        button(type="button" class="btn")
+                            a(href="#skills" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") Design
+                        button(type="button" class="btn")
+                            a(href="#contact" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") Address
+                        img(src="imgs/vite.jpg" loading="lazy" class="wow bounceIn" alt="about-section-photo")
+                        p.text-justify.wow.bounceIn Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa beatae a placeat nemo obcaecati illo assumenda quidem quam exercitationem eius neque consequuntur nisi officiis error laboriosam cum, repellat magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa beatae a placeat nemo obcaecati illo assumenda quidem quam exercitationem eius neque consequuntur nisi officiis error laboriosam cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa beatae a placeat nemo obcaecati illo assumenda quidem quam exercitationem eius neque consequuntur nisi officiis error laboriosam cum, repellat magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa beatae a placeat nemo obcaecati illo assumenda quidem quam exercitationem eius neque consequuntur nisi officiis error laboriosam cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa beatae a placeat nemo obcaecati illo assumenda quidem quam exercitationem eius neque consequuntur nisi officiis error laboriosam cum, repellat magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa beatae a placeat nemo obcaecati illo assumenda quidem quam exercitationem eius neque consequuntur nisi officiis error laboriosam cum.
+                    //- Skills Section
+                    .skills-section#skills.text-center.col-xl-12.wow.bounceIn
+                        button(type="button" class="btn")
+                            a(href="#about" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") vitae
+                        button(type="button" class="btn")
+                            a(href="#skills" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") Design
+                        button(type="button" class="btn")
+                            a(href="#contact" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") Address
+
+                        h2.text-center.text-uppercase.wow.bounceIn Development
+                            li.list-unstyled.wow.bounceIn HTML5 - EXPERT
+                            li.list-unstyled.wow.bounceIn CSS3 - EXPERT
+                            li.list-unstyled.wow.bounceIn SHOPIFY - SKILLED
+                            li.list-unstyled.wow.bounceIn SCSS - EXPERT
+                            li.list-unstyled.wow.bounceIn SQL - SKILLED
+                            li.list-unstyled.wow.bounceIn DROPSHIPPING - SKILLED
+                            li.list-unstyled.wow.bounceIn GOOGLE GO - EXPERT
+                            li.list-unstyled.wow.bounceIn SO ON
+
+                        h2.text-center.text-uppercase.wow.bounceIn Software
+                            li.list-unstyled.wow.bounceIn Adobe Softwarw
+                            li.list-unstyled.wow.bounceIn Adobe Illustrator
+                            li.list-unstyled.wow.bounceIn Adobe Dreamwaver
+                            li.list-unstyled.wow.bounceIn Adobe Flash
+                            li.list-unstyled.wow.bounceIn Adobe Premiere
+                            li.list-unstyled.wow.bounceIn Adobe Camtasia
+                    //- Contact Section
+                    .contact-section#contact.text-center.col-xl-12.wow.bounceIn
+                        button(type="button" class="btn")
+                            a(href="#about" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") vitae
+                        button(type="button" class="btn")
+                            a(href="#skills" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") Design
+                        button(type="button" class="btn")
+                            a(href="#contact" class="text-uppercase text-decoration-none font-weight-bold wow bounceIn") Address
+                        img(src="imgs/vite.jpg" loading="lazy" class="wow bounceIn" alt="contact-section-photo")
+
+                        h2.paragraph.text-center.text-uppercase.wow.bounceIn Contact Me
+                        ul.text-center.list-unstyled.contact-list.wow.bounceIn
+                            li.list-unstyled.wow.bounceIn (+201) 888 8888 888
+                            li.list-unstyled.wow.bounceIn example99@example.com
+        //- End Main Part
+        |
+        |
+        //- Start Footer Part
+        footer#footer
+            .row.justify-content-center
+                .col-xs-12.wow.bounceIn
+                    #go-top
+                        a(class="gototop" href="#top")
+                            i(class="fas fa-chevron-circle-up")
+        //- End Footer Part
+        |
+        |
+        //- Start JS Stylesheet
+        |
+        |
+        //- jQuery CDN
+        script(src="js/vendor/jquery/jquery-3.3.1.js")
+        |
+        |
+        //- Bootstrap
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")
+        |
+        |
+        //- Wow JS
+        script(src="js/vendor/wow.js/wow.min.js")
+        |
+        |
+        //-Main JS
+        script(src="js/main.js")
+        |
+        |
+        //- End JS Stylesheet

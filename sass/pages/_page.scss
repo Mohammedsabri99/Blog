@@ -1,0 +1,37 @@
+* {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+        background: #d1ccc0;
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px $main-color;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#fff200, #0c002b);
+        border-radius: 6px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    background-color: $main-color;
+
+    ::-moz-selection { /* Code for Firefox */
+        color: $white-color;
+        background: $main-color;
+    }
+    ::selection {
+        color: $white-color;
+        background: $main-color;
+    }
+}

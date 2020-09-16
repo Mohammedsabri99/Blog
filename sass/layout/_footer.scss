@@ -1,0 +1,17 @@
+#footer {
+    #go-top {
+        font-size: 50px;
+        margin-top: -61px;
+    
+        .fa-chevron-circle-up {
+            color: $white-color;
+    
+            &:hover,
+            &:focus,
+            &.active {
+                color: $third-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
